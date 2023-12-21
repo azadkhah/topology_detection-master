@@ -1,0 +1,13 @@
+
+opython:S11922"RDefine a constant instead of duplicating this literal "//nnnooodddeeesss" 4 times.(‘ĞĞÑùÿÿÿÿ
+jpython:S11925"RDefine a constant instead of duplicating this literal "//eeedddgggeeesss" 4 times.(ñ³“
+lpython:S3776	"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÌÊÁ
+Tpython:S5754/"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+ypython:S117„"\Rename this local variable "isConnected" to match the regular expression ^[_a-z][a-z0-9_]*$.(ßé¼¥ıÿÿÿÿ
+Mpython:S1481„"/Remove the unused local variable "isConnected".(ßé¼¥ıÿÿÿÿ
+Hpython:S1481ˆ"/Remove the unused local variable "isConnected".(˜ˆàî
+lpython:S3776="TRefactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.(ëÛ€
+Tpython:S5754m"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+6python:S125j"Remove this commented out code.(»ÖšŠ
+<python:S125‹"Remove this commented out code.(«÷Ÿ€şÿÿÿÿ
+7python:S125"Remove this commented out code.(îú¤¬

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 1300px;
+            height: 700px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+
+
+    //nnnooodddeeesss
+var nodes = new vis.DataSet([{"id": 1, "label": "93.113.224.60", "color": "#FB7E81"}, {"id": 2, "label": "172.22.5.62"}, {"id": 3, "label": "93.113.224.100", "color": "#FB7E81"}, {"id": 4, "label": "93.113.224.107", "color": "#FB7E81"}, {"id": 5, "label": "93.113.224.58", "color": "#FB7E81"}, {"id": 6, "label": "93.113.224.99", "color": "#FB7E81"}, {"id": 7, "label": "93.113.224.18", "color": "#FB7E81"}, {"id": 8, "label": "93.113.224.36", "color": "#FB7E81"}, {"id": 9, "label": "10.202.0.9"}, {"id": 10, "label": "10.196.119.1"}, {"id": 11, "label": "10.201.181.97"}, {"id": 12, "label": "10.136.131.142"}, {"id": 13, "label": "10.196.212.65"}, {"id": 14, "label": "10.196.212.8"}, {"id": 15, "label": "10.176.211.65"}, {"id": 16, "label": "10.196.212.11"}, {"id": 17, "label": "10.196.212.6"}, {"id": 18, "label": "10.196.212.7"}, {"id": 19, "label": "10.196.212.21"}, {"id": 20, "label": "10.196.212.18"}, {"id": 21, "label": "10.196.212.10"}, {"id": 22, "label": "79.175.129.2", "color": "#FB7E81"}, {"id": 23, "label": "172.22.5.50"}, {"id": 24, "label": "79.175.129.202", "color": "#FB7E81"}, {"id": 25, "label": "79.175.129.174", "color": "#FB7E81"}, {"id": 26, "label": "79.175.129.109", "color": "#FB7E81"}, {"id": 27, "label": "79.175.129.153", "color": "#FB7E81"}, {"id": 28, "label": "79.175.129.94", "color": "#FB7E81"}, {"id": 29, "label": "172.22.5.42"}, {"id": 30, "label": "172.22.5.29"}, {"id": 31, "label": "10.196.212.9"}, {"id": 32, "label": "10.196.212.22"}, {"id": 33, "label": "10.196.212.5"}]);
+//nnnooodddeeesss
+
+
+    //eeedddgggeeesss
+var edges = new vis.DataSet([{"from": 2, "to": 3, "color": "#6E6EFD", "value": 9}, {"from": 2, "to": 4, "color": "#6E6EFD", "value": 2}, {"from": 2, "to": 1, "color": "#6E6EFD", "value": 9}, {"from": 2, "to": 5, "color": "#6E6EFD", "value": 10}, {"from": 2, "to": 6, "color": "#6E6EFD", "value": 8}, {"from": 2, "to": 7, "color": "#6E6EFD", "value": 5}, {"from": 2, "to": 8, "color": "#6E6EFD", "value": 7}, {"from": 9, "to": 2, "color": "#6E6EFD", "value": 5}, {"from": 10, "to": 11, "color": "#6E6EFD", "value": 10}, {"from": 10, "to": 9, "color": "#6E6EFD", "value": 9}, {"from": 12, "to": 10, "color": "#6E6EFD", "value": 3}, {"from": 13, "to": 12, "color": "#6E6EFD", "value": 9}, {"from": 14, "to": 13, "color": "#6E6EFD", "value": 8}, {"from": 15, "to": 16, "color": "#6E6EFD", "value": 1}, {"from": 17, "to": 13, "color": "#6E6EFD", "value": 9}, {"from": 18, "to": 13, "color": "#6E6EFD", "value": 9}, {"from": 19, "to": 13, "color": "#6E6EFD", "value": 2}, {"from": 20, "to": 13, "color": "#6E6EFD", "value": 6}, {"from": 21, "to": 13, "color": "#6E6EFD", "value": 2}, {"from": 16, "to": 13, "color": "#6E6EFD", "value": 7}, {"from": 23, "to": 24, "color": "#6E6EFD", "value": 10}, {"from": 23, "to": 25, "color": "#6E6EFD", "value": 5}, {"from": 23, "to": 26, "color": "#6E6EFD", "value": 1}, {"from": 23, "to": 22, "color": "#6E6EFD", "value": 10}, {"from": 23, "to": 27, "color": "#6E6EFD", "value": 4}, {"from": 23, "to": 28, "color": "#6E6EFD", "value": 4}, {"from": 29, "to": 23, "color": "#6E6EFD", "value": 3}, {"from": 30, "to": 29, "color": "#6E6EFD", "value": 2}, {"from": 11, "to": 30, "color": "#6E6EFD", "value": 6}, {"from": 31, "to": 13, "color": "#6E6EFD", "value": 5}, {"from": 32, "to": 13, "color": "#6E6EFD", "value": 7}, {"from": 33, "to": 13, "color": "#6E6EFD", "value": 1}]);
+//eeedddgggeeesss
+
+
+    // create a network
+    var container = document.getElementById("mynetwork");
+    var data = {
+        nodes: nodes,
+        edges: edges,
+    };
+    var options = {};
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 1300px;
+            height: 700px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+
+
+    //nnnooodddeeesss
+var nodes = new vis.DataSet([]);
+//nnnooodddeeesss
+
+
+    //eeedddgggeeesss
+var edges = new vis.DataSet([]);
+//eeedddgggeeesss
+
+
+    // create a network
+    var container = document.getElementById("mynetwork");
+    var data = {
+        nodes: nodes,
+        edges: edges,
+    };
+    var options = {
+        // edges: {
+        //     smooth: {
+        //         type: "cubicBezier",
+        //         forceDirection: "horizontal",
+        //         roundness: 0.4,
+        //     },
+        // },
+        // layout: {
+        //     hierarchical: {
+        //         direction: "DU",
+        //     },
+        // },
+        physics: {
+            hierarchicalRepulsion: {
+                avoidOverlap: 1,
+            },
+        },
+        // physics: false,
+    };
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+

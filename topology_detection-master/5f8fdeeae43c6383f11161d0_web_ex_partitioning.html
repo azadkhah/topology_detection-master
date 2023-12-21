@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 1300px;
+            height: 700px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+
+
+    //nnnooodddeeesss
+var nodes = new vis.DataSet([{"id": 0, "label": "10.10.64.242"}, {"id": 1, "label": "5.106.6.147", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.147/28"}, {"id": 2, "label": "5.106.6.205", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.205/28"}, {"id": 3, "label": "5.106.6.140", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.140/28"}, {"id": 4, "label": "5.106.6.214", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.214/28"}, {"id": 5, "label": "5.106.6.75", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.75/28"}, {"id": 6, "label": "5.106.6.92", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.92/28"}, {"id": 7, "label": "5.106.6.26", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.26/28"}, {"id": 8, "label": "5.106.6.76", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.75/28"}, {"id": 9, "label": "5.106.6.155", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.147/28"}, {"id": 10, "label": "5.106.6.45", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.45/28"}, {"id": 11, "label": "5.106.6.96", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.96/28"}, {"id": 12, "label": "5.106.6.210", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.214/28"}, {"id": 13, "label": "5.106.6.204", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.205/28"}, {"id": 14, "label": "5.106.6.88", "color": "#FB7E81", "parent": "5.106.6.0/24", "label_name": "\u062a\u0633\u062a \u06f3", "cluster": "5.106.6.92/28"}]);
+//nnnooodddeeesss
+
+
+    //eeedddgggeeesss
+var edges = new vis.DataSet([{"from": 1, "to": 0}, {"from": 2, "to": 0}, {"from": 3, "to": 0}, {"from": 4, "to": 0}, {"from": 5, "to": 0}, {"from": 6, "to": 0}, {"from": 7, "to": 0}, {"from": 8, "to": 0}, {"from": 9, "to": 0}, {"from": 10, "to": 0}, {"from": 11, "to": 0}, {"from": 12, "to": 0}, {"from": 13, "to": 0}, {"from": 14, "to": 0}]);
+//eeedddgggeeesss
+
+
+    // create a network
+    var container = document.getElementById("mynetwork");
+    var data = {
+        nodes: nodes,
+        edges: edges,
+    };
+    var options = {
+        // edges: {
+        //     smooth: {
+        //         type: "cubicBezier",
+        //         forceDirection: "horizontal",
+        //         roundness: 0.4,
+        //     },
+        // },
+        // layout: {
+        //     hierarchical: {
+        //         direction: "DU",
+        //     },
+        // },
+        physics: {
+            hierarchicalRepulsion: {
+                avoidOverlap: 1,
+            },
+        },
+        // physics: false,
+    };
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+

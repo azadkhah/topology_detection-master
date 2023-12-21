@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 1300px;
+            height: 700px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+
+
+    //nnnooodddeeesss
+var nodes = new vis.DataSet([{"id": 0, "label": "10.201.182.110"}, {"id": 1, "label": "86.104.44.219", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 2, "label": "86.104.44.205", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.205/28"}, {"id": 3, "label": "86.104.44.196", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.205/28"}, {"id": 4, "label": "86.104.44.70", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}, {"id": 5, "label": "86.104.44.18", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.21/28"}, {"id": 6, "label": "86.104.44.19"}, {"id": 7, "label": "86.104.44.21", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.21/28"}, {"id": 8, "label": "86.104.44.221", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 9, "label": "86.104.44.209", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 10, "label": "86.104.44.72", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}, {"id": 11, "label": "86.104.44.71", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}, {"id": 12, "label": "86.104.44.215", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 13, "label": "86.104.44.211", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 14, "label": "86.104.44.97", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.97/28"}, {"id": 15, "label": "86.104.44.7", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.7/28"}, {"id": 16, "label": "86.104.44.203", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.205/28"}, {"id": 17, "label": "86.104.44.218", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.219/28"}, {"id": 18, "label": "86.104.44.73", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}, {"id": 19, "label": "86.104.44.100", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.97/28"}, {"id": 20, "label": "86.104.44.250", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.250/28"}, {"id": 21, "label": "86.104.44.146", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.146/28"}, {"id": 22, "label": "86.104.44.69", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}, {"id": 23, "label": "86.104.44.76", "color": "#FB7E81", "parent": "86.104.44.0/24", "label_name": "", "cluster": "86.104.44.70/28"}]);
+//nnnooodddeeesss
+
+
+    //eeedddgggeeesss
+var edges = new vis.DataSet([{"from": 1, "to": 0}, {"from": 2, "to": 0}, {"from": 3, "to": 0}, {"from": 4, "to": 0}, {"from": 5, "to": 0}, {"from": 6, "to": 5}, {"from": 7, "to": 6}, {"from": 8, "to": 0}, {"from": 9, "to": 0}, {"from": 10, "to": 0}, {"from": 11, "to": 0}, {"from": 12, "to": 0}, {"from": 13, "to": 0}, {"from": 14, "to": 0}, {"from": 15, "to": 0}, {"from": 16, "to": 0}, {"from": 17, "to": 0}, {"from": 18, "to": 0}, {"from": 19, "to": 0}, {"from": 20, "to": 0}, {"from": 21, "to": 0}, {"from": 22, "to": 0}, {"from": 23, "to": 0}]);
+//eeedddgggeeesss
+
+
+    // create a network
+    var container = document.getElementById("mynetwork");
+    var data = {
+        nodes: nodes,
+        edges: edges,
+    };
+    var options = {
+        // edges: {
+        //     smooth: {
+        //         type: "cubicBezier",
+        //         forceDirection: "horizontal",
+        //         roundness: 0.4,
+        //     },
+        // },
+        // layout: {
+        //     hierarchical: {
+        //         direction: "DU",
+        //     },
+        // },
+        physics: {
+            hierarchicalRepulsion: {
+                avoidOverlap: 1,
+            },
+        },
+        // physics: false,
+    };
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+

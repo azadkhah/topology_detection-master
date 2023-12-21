@@ -1,0 +1,21 @@
+
+Mpython:S1066É"/Merge this if statement with the enclosing one.(¥ÄëÃøÿÿÿÿ
+Mpython:S14813"0Remove the unused local variable "pranet_count".(˜½ÁÔûÿÿÿÿ
+Jpython:S14816"-Remove the unused local variable "range_ips".(ˆ”ºåøÿÿÿÿ
+mpython:S3776&"URefactor this function to reduce its Cognitive Complexity from 113 to the 15 allowed.(Ò‡‰
+6python:S125"Remove this commented out code.(òø¸©
+6python:S125"Remove this commented out code.(²Ì
+6python:S125("Remove this commented out code.(‚èş·
+Tpython:S5754K"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+;python:S125P"Remove this commented out code.(Ã¹êñüÿÿÿÿ
+6python:S125ß"Remove this commented out code.(ªÿ4
+<python:S125ƒ"Remove this commented out code.(ˆÂ•Ùüÿÿÿÿ
+7python:S125“"Remove this commented out code.(Ãäµå
+7python:S125–"Remove this commented out code.(ç²‘Ú
+7python:S125Í"Remove this commented out code.(ÆÔœ¦
+7python:S125Ü"Remove this commented out code.(¾©›¢
+<python:S125ı"Remove this commented out code.(³İ¹öşÿÿÿÿ
+6python:S125Ÿ"Remove this commented out code.(„¯Š
+Upython:S5754®"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
+7python:S125±"Remove this commented out code.(İßÍ›
+7python:S125Ç"Remove this commented out code.(»Éÿû

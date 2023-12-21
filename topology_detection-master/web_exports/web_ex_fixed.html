@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Network</title>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+        #mynetwork {
+            width: 1300px;
+            height: 700px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+<script type="text/javascript">
+
+
+    //nnnooodddeeesss
+var nodes = new vis.DataSet([{"id": 1, "label": "93.113.224.60", "level": 8, "color": "#FB7E81"}, {"id": 2, "label": "10.201.182.110", "level": 7}, {"id": 3, "label": "93.113.224.58", "level": 8, "color": "#FB7E81"}, {"id": 4, "label": "93.113.224.99", "level": 8, "color": "#FB7E81"}, {"id": 5, "label": "93.113.224.18", "level": 8, "color": "#FB7E81"}, {"id": 6, "label": "93.113.224.36", "level": 8, "color": "#FB7E81"}, {"id": 7, "label": "93.113.224.107", "level": 8, "color": "#FB7E81"}, {"id": 8, "label": "93.113.224.100", "level": 8, "color": "#FB7E81"}, {"id": 9, "label": "79.175.129.2", "level": 8, "color": "#FB7E81"}, {"id": 10, "label": "79.175.129.202", "level": 8, "color": "#FB7E81"}, {"id": 11, "label": "79.175.129.174", "level": 8, "color": "#FB7E81"}, {"id": 12, "label": "79.175.129.153", "level": 8, "color": "#FB7E81"}, {"id": 13, "label": "79.175.129.109", "level": 8, "color": "#FB7E81"}, {"id": 14, "label": "79.175.129.94", "level": 8, "color": "#FB7E81"}]);
+//nnnooodddeeesss
+
+
+    //eeedddgggeeesss
+var edges = new vis.DataSet([{"from": 2, "to": 1, "value": 4, "label": "4"}, {"from": 2, "to": 3, "value": 4, "label": "4"}, {"from": 2, "to": 4, "value": 4, "label": "4"}, {"from": 2, "to": 5, "value": 4, "label": "4"}, {"from": 2, "to": 6, "value": 6, "label": "6"}, {"from": 2, "to": 7, "value": 4, "label": "4"}, {"from": 2, "to": 8, "value": 24, "label": "24"}, {"from": 2, "to": 9, "value": 4, "label": "4"}, {"from": 2, "to": 10, "value": 24, "label": "24"}, {"from": 2, "to": 11, "value": 24, "label": "24"}, {"from": 2, "to": 12, "value": 4, "label": "4"}, {"from": 2, "to": 13, "value": 24, "label": "24"}, {"from": 2, "to": 14, "value": 4, "label": "4"}]);
+//eeedddgggeeesss
+
+
+    // create a network
+    var container = document.getElementById("mynetwork");
+    var data = {
+        nodes: nodes,
+        edges: edges,
+    };
+    var options = {
+        // edges: {
+        //     smooth: {
+        //         type: "cubicBezier",
+        //         forceDirection: "horizontal",
+        //         roundness: 0.4,
+        //     },
+        // },
+        // layout: {
+        //     hierarchical: {
+        //         direction: "DU",
+        //     },
+        // },
+        physics: {
+            hierarchicalRepulsion: {
+                avoidOverlap: 1,
+            },
+        },
+        // physics: false,
+    };
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
+

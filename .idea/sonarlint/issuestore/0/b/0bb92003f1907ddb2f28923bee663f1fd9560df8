@@ -1,0 +1,6 @@
+
+1python:S1700"Rename field "graph"(Âè’Üùÿÿÿÿ
+gpython:S100"KRename method "addEdge" to match the regular expression ^[a-z_][a-z0-9_]*$.(êî‹œþÿÿÿÿ
+bpython:S100"KRename method "DFSUtil" to match the regular expression ^[a-z_][a-z0-9_]*$.(Œâ»¡
+gpython:S100"PRename method "getTranspose" to match the regular expression ^[a-z_][a-z0-9_]*$.(ð†³µ
+dpython:S100,"HRename method "isSC" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÞŸï–þÿÿÿÿ
